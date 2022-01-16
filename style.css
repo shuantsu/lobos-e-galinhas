@@ -1,0 +1,91 @@
+html, body {
+	height: 100%;
+}
+* {
+	box-sizing: border-box;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+}
+#menu_topo {
+	font-family: verdana;
+	font-size: 11pt;
+	position: absolute;
+	text-align; center;
+	top: 0;
+	left: 0;
+}
+a, a:hover, a:visited, a:active {
+	color: blue;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#jogo, .lobo, .galinha {
+	background-size: 100%;
+}
+.lobo, .galinha, #barco {
+	cursor: pointer;
+}
+#jogo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -256px;
+	margin-top: -192px;
+	width: 512px;
+	height: 384px;
+	background-image: url('img/fundo.png');
+	overflow: hidden;
+}
+#esquerda, #centro, #direita {
+	float: left;
+}
+#esquerda, #direita {
+	margin-top: 180px;
+}
+#esquerda {
+	width: 22%;
+	height: 100%;
+}
+#centro {
+	width: 56%;
+	height: 100%;
+}
+#direita {
+	width: 22%;
+	height: 100%;
+}
+.lobo, .galinha {
+	display: inline-block;
+	margin-right: -20px;
+}
+.lobo {
+	width: 46px;
+	height: 56px;
+	background-image: url('img/lobo.png');
+}
+.galinha {
+	width: 32px;
+	height: 32px;
+	background-image: url('img/galinha.png');
+}
+.lobos {
+	height: 56px;
+}
+.galinhas {
+	height: 32px;
+}
+#barco {
+	padding-left: 20px;
+	width: 128px;
+	height: 64px;
+	background-size: 128px 60px;
+	background-image: url('img/barco.png');
+	background-repeat: no-repeat;
+	background-position: 0% 5%;
+	margin-top: 210px;
+}
+#barco .lobo, #barco .galinha {
+	margin-top: -20px;
+}
